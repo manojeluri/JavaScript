@@ -13,8 +13,13 @@ User.prototype.logout = function(){
     console.log(this.email,"has logged out");
 }
 
+function Admin(...args){
+    console.log(args)
+}
+
 var userOne = new User('ryu@ninjas.com', "Ryu");
 var userTwo = new User('yoshi@gmail.com', 'Yoshi');
+var admin = new Admin('shaun@ninjas.com', 'Shaun');
 
 console.log(userOne);
 userTwo.login();
